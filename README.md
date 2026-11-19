@@ -1,5 +1,8 @@
 # airflow-provider-darkmoon
 
+> [!IMPORTANT]
+> **License change.** Darkmoon Community is moving from the GNU GPL v3.0 to the GNU AGPL v3.0. Every commit published up to `edfe9cb` (27 October 2026) stays under the GNU GPL v3.0, and the contributions made by outside contributors before the switch also stay under the GNU GPL v3.0 (they are not relicensed). Details: [LICENSING.md](https://github.com/ASCIT31/Dark-Moon/blob/master/LICENSING.md).
+
 Apache Airflow provider for [Darkmoon](https://github.com/ASCIT31/Dark-Moon), the autonomous AI penetration testing platform. Start a pentest campaign from a DAG, wait for it, and use the findings (or a severity gate) in the rest of your pipeline.
 
 > **Open source vs Pro.** The Darkmoon engine and CLI are open source (GPL-3.0). The **Dashboard API** this provider talks to is part of **Darkmoon Pro** and is self-hosted by you: there is no public hosted endpoint. This provider needs a reachable Darkmoon Pro dashboard, a dashboard user, and an Airflow worker that can reach it. If you only run the open-source CLI, use the CLI JSON/SARIF output or the `ASCIT31/darkmoon-action` GitHub Action instead.
