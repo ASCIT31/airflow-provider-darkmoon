@@ -5,7 +5,7 @@
 
 Apache Airflow provider for [Darkmoon](https://github.com/ASCIT31/Dark-Moon), the autonomous AI penetration testing platform. Start a pentest campaign from a DAG, wait for it, and use the findings (or a severity gate) in the rest of your pipeline.
 
-> **Open source vs Pro.** The Darkmoon engine and CLI are open source (GPL-3.0). The **Dashboard API** this provider talks to is part of **Darkmoon Pro** and is self-hosted by you: there is no public hosted endpoint. This provider needs a reachable Darkmoon Pro dashboard, a dashboard user, and an Airflow worker that can reach it. If you only run the open-source CLI, use the CLI JSON/SARIF output or the `ASCIT31/darkmoon-action` GitHub Action instead.
+> **Open source vs Pro.** The Darkmoon engine and CLI are open source (AGPL-3.0). The **Dashboard API** this provider talks to is part of **Darkmoon Pro** and is self-hosted by you: there is no public hosted endpoint. This provider needs a reachable Darkmoon Pro dashboard, a dashboard user, and an Airflow worker that can reach it. If you only run the open-source CLI, use the CLI JSON/SARIF output or the `ASCIT31/darkmoon-action` GitHub Action instead.
 
 > Only run assessments against systems you own or are explicitly authorised to test. Findings can contain false positives and need review by a qualified human. This provider never triggers remediation or merges anything.
 
@@ -77,4 +77,4 @@ Tests mock the HTTP layer; no Darkmoon instance is needed.
 
 ## License
 
-Apache-2.0. Darkmoon itself is GPL-3.0 and is not bundled here.
+Apache-2.0. Darkmoon itself is AGPL-3.0 (see [LICENSING.md](https://github.com/ASCIT31/Dark-Moon/blob/master/LICENSING.md)) and is not bundled here.
